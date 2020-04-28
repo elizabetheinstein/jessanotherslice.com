@@ -620,3 +620,32 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.hashtag {
+  color: black;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.about {
+  flex-direction: column;
+}
+
+.instagram {
+  display: inline-block;
+  vertical-align: text-top;
+  width: 7%;
+  max-width: 20px;
+  margin-left: 4px;
+  margin-right: 2px;
+}
+
+.jess-main {
+  margin: 10px 80px;
+  align-self: right;
+  justify-self: flex-end;
+  width: 50%;
+}

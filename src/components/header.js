@@ -5,7 +5,7 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `#F4A261`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -20,11 +20,11 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: `white`,
+            color: `black`,
             textDecoration: `none`,
           }}
         >
-          {siteTitle}
+          Coming Soon ⁠–⁠ <a className="hashtag" href="https://www.instagram.com/jessanotherslice/?hl=en">@jessanotherslice</a>
         </Link>
       </h1>
     </div>

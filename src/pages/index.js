@@ -1,21 +1,31 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+import JessMain from "../components/jessMain"
+import Instagram from '../components/instagram'
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+const Index = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <SEO title="jessanotherslice" />
+    <div className="main">
+      <div className="about">
+        <h1>About</h1>
+        <p>Hi I'm Jess, and I'm a pizza foodie based in NYC! Follow my adventures on
+          <a href="https://www.instagram.com/jessanotherslice/?hl=en">
+            <div className="instagram">
+              <Instagram />
+            </div>
+          </a>
+        </p>
+        <p>Looking to collab? Email jessanotherslice@gmail.com</p>
+      </div>
+      <div className="jess-main">
+        <JessMain />
+      </div>
     </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
+
+  </Layout >
 )
 
-export default IndexPage
+export default Index
