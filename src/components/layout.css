@@ -649,3 +649,20 @@ pre tt:after {
   justify-self: flex-end;
   width: 50%;
 }
+
+@media screen and (max-width: 415px) {
+  .jess-main {
+    margin: 10px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .about {
+    max-width: 50%;
+  }
+  .jess-main {
+    margin: 20px;
+    width: 100%;
+  }
+}
