@@ -275,18 +275,13 @@ li > p {
   }
 }
 
+
+
 .hashtag {
-  color: black;
+  color: inherit;
 }
 
-.main {
-  display: flex;
-  flex-direction: row;
-}
 
-.about {
-  flex-direction: column;
-}
 
 .instagram {
   display: inline-block;
@@ -295,28 +290,4 @@ li > p {
   max-width: 20px;
   margin-left: 4px;
   margin-right: 2px;
-}
-
-.jess-pizza {
-  margin: 10px 80px;
-  align-self: right;
-  justify-self: flex-end;
-  width: 50%;
-}
-
-@media screen and (max-width: 415px) {
-  .jess-pizza {
-    margin: 10px;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 350px) {
-  .about {
-    max-width: 50%;
-  }
-  .jess-pizza {
-    margin: 20px;
-    width: 100%;
-  }
 }

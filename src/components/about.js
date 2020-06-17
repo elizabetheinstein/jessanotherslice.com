@@ -1,24 +1,25 @@
 import React from "react";
 import JessPizza from "./jessPizza";
-import Instagram from "../components/instagram";
+
+import "../styles/about.css";
 
 const About = () => {
 
     return (
-        <div className="main">
-            <div className="about">
-                <h1>About</h1>
-                <p>Hi I'm Jess, and I'm a pizza foodie based in NYC! Follow my adventures on
+        <div id="about">
+            <div className="about-container">
+                <div className="inner-text">
+                    <h1>About</h1>
+                    <p>Hi I'm Jess, and I'm a pizza foodie based in NYC! Follow my adventures on
                     <a href="https://www.instagram.com/jessanotherslice/?hl=en">
-                        <div className="instagram">
-                            <Instagram />
-                        </div>
+                            Instagram.
                     </a>
-                </p>
-                {/* Contact Form */}
-            </div>
-            <div className="jess-pizza">
-                <JessPizza />
+                    </p>
+                    {/* Contact Form */}
+                </div>
+                <div className="about-image">
+                    <JessPizza />
+                </div>
             </div>
         </div>
     )
