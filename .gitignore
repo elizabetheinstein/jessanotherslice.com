@@ -54,6 +54,9 @@ typings/
 # dotenv environment variable files
 .env*
 
+#dotjson environment variable files
+secrets.json
+
 # gatsby files
 .cache/
 public
