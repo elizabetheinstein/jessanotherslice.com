@@ -2,7 +2,7 @@ import React from "react";
 
 import GoogleMap from "./googleMap"
 
-export const Restaurant = () => (
+export const BestOf = () => (
     <div className="restaurant-container">
         <div className="restaurant-list">
             {/* list of restaurants as a sidebar */}

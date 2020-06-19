@@ -3,14 +3,15 @@ import React from "react";
 import Layout from "../components/layout";
 import About from "../components/about";
 import SEO from "../components/seo";
-import { Restaurant } from "../components/restaurant";
+import { BestOf } from "../components/bestOf";
 
 
 const Index = () => (
   <Layout>
     <SEO title="jessanotherslice" />
     <About />
-    <Restaurant />
+    <BestOf />
+    {/* Contact */}
   </Layout>
 
 );
