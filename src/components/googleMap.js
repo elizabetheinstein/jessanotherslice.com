@@ -2,6 +2,8 @@ import React from "react";
 import GoogleMapReact from "google-map-react";
 import { MAPS_API_KEY } from "../../secrets.json";
 
+import "../styles/map.css";
+
 import {
     JoeAndPats,
     Brunetti,
@@ -24,7 +26,7 @@ const defaultProps = {
 };
 
 const GoogleMap = () => (
-    <div style={{ height: '100vh', width: '100%' }}>
+    <div className="google-map">
         <GoogleMapReact
             bootstrapURLKeys={{ key: MAPS_API_KEY }}
             defaultCenter={defaultProps.center}
