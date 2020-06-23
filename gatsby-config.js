@@ -30,5 +30,17 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-source-mongodb`,
+      options: {
+        dbName: `jessanotherslice`,
+        collection: `restaurants`,
+        connectionString: `mongodb+srv://Elle:${process.env.MONGO_PASSWORD}@test-cluster-jcdfi.mongodb.net/jessanotherslice?retryWrites=true&w=majority`,
+        auth: {
+          user: `Elle`,
+          password: process.env.MONGO_PASSWORD
+        }
+      },
+    },
   ],
 }
