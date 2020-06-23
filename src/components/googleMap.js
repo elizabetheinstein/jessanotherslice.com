@@ -9,12 +9,13 @@ import {
     Brunetti,
     DiFara,
     Macchina,
-    LBK,
+    Levante,
     BleekerStreetPizza,
     NYPizzaSuprema,
     Emily,
     LIndustriePizzeria,
-    Keste
+    Keste,
+    Levante
 } from "./restaurantList";
 
 const defaultProps = {
@@ -36,7 +37,7 @@ const GoogleMap = () => (
             <Brunetti lat={40.738268} lng={-74.0075657} text={"2"} />
             <DiFara lat={40.7169342} lng={-73.9641728} text={"3"} />
             <Macchina lat={40.740848} lng={-73.9833777} text={"4"} />
-            <LBK lat={40.6840676} lng={-73.9977192} text={"5"} />
+            <Levante lat={40.747557} lng={-73.9416924} text={"5"} />
             <BleekerStreetPizza lat={40.7321938} lng={-74.0055907} text={"6"} />
             <NYPizzaSuprema lat={40.7501438} lng={-73.9974131} text={"7"} />
             <Emily lat={40.7501226} lng={-74.0652643} text={"8"} />

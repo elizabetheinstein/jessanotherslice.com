@@ -32,7 +32,7 @@ export const Macchina = ({ text }) => {
     );
 };
 
-export const LBK = ({ text }) => {
+export const Levante = ({ text }) => {
     return (
         <div className="restaurant-rating">
             {text}
