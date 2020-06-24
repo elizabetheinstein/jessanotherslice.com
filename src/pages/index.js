@@ -1,31 +1,19 @@
-import React from "react"
+import React from "react";
 
-import Layout from "../components/layout"
-import JessMain from "../components/jessMain"
-import Instagram from '../components/instagram'
-import SEO from "../components/seo"
+import Layout from "../components/layout";
+import About from "../components/about";
+import SEO from "../components/seo";
+import { BestOf } from "../components/bestOf";
+
 
 const Index = () => (
   <Layout>
     <SEO title="jessanotherslice" />
-    <div className="main">
-      <div className="about">
-        <h1>About</h1>
-        <p>Hi I'm Jess, and I'm a pizza foodie based in NYC! Follow my adventures on
-          <a href="https://www.instagram.com/jessanotherslice/?hl=en">
-            <div className="instagram">
-              <Instagram />
-            </div>
-          </a>
-        </p>
-        <p>Looking to collab? Email jessanotherslice@gmail.com</p>
-      </div>
-      <div className="jess-main">
-        <JessMain />
-      </div>
-    </div>
+    <About />
+    <BestOf />
+    {/* Contact */}
+  </Layout>
 
-  </Layout >
-)
+);
 
-export default Index
+export default Index;

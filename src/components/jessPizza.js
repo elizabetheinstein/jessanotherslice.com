@@ -1,8 +1,8 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
-const JessMain = () => {
+const JessPizza = () => {
   const data = useStaticQuery(graphql`
     query {
       jess: file(relativePath: { eq: "jess-pizza.jpeg" }) {
@@ -13,9 +13,9 @@ const JessMain = () => {
         }
       }
     }
-  `)
+  `);
 
   return <Img fluid={data.jess.childImageSharp.fluid} />
-}
+};
 
-export default JessMain
+export default JessPizza;
