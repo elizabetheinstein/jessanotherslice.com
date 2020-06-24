@@ -14,8 +14,7 @@ import {
     NYPizzaSuprema,
     Emily,
     LIndustriePizzeria,
-    Keste,
-    Levante
+    Keste
 } from "./restaurantList";
 
 const defaultProps = {

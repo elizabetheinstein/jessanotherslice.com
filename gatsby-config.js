@@ -1,3 +1,5 @@
+import { MONGO_PASSWORD } from "../../secrets.json";
+
 module.exports = {
   siteMetadata: {
     title: `NYC foodie`,
@@ -30,5 +32,25 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-source-mongodb`,
+      options: {
+        auth: {
+          user: `Elle`,
+          password: MONGO_PASSWORD
+        },
+        server: {
+          address: `test-cluster-shard-00-01-jcdfi.mongodb.net`,
+          port: 27017
+        },
+        dbName: `jessanotherslice`,
+        collection: `restaurants`,
+        extraParams: {
+          ssl: true,
+          authSource: `admin`,
+          retryWrites: true
+        }
+      }
+    }
   ],
 }
