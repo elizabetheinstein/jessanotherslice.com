@@ -1,6 +1,6 @@
 import { graphql } from "gatsby";
 
-const GET_RESTAURANTS = graphql`
+export const GET_RESTAURANTS = graphql`
     query {
         allMongodbJessanothersliceRestaurants {
             edges {
