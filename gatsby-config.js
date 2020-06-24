@@ -1,4 +1,4 @@
-import { MONGO_PASSWORD } from "../../secrets.json";
+const { MONGO_PASSWORD } = require("./secrets.json")
 
 module.exports = {
   siteMetadata: {
